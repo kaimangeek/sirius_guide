@@ -33,7 +33,7 @@ def back(update, context):
 
 
 def sport_objects(update, context):
-    reply_keyboard = [['/Formula_1_track', '/Fisht_stadium', 'Speed_skating_center_Adler_Arena'],
+    reply_keyboard = [['/Formula_1_track', '/Fisht_stadium', '/Speed_skating_center_Adler_Arena'],
                       ['/Ice_Palace_Bolshoi', '/Ice_arena_Puck', '/Curling_Center_Ice_Cube'],
                       ['/Ice_Palace_Iceberg', '/back']]
     markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=False)
@@ -180,7 +180,7 @@ def Sochi_Park(update, context):
 
 
 def education_objects(update, context):
-    reply_keyboard = [['/Park_of_Science_and_Art_Sirius', 'Lyceum_Sirius'],
+    reply_keyboard = [['/Park_of_Science_and_Art_Sirius', '/Lyceum_Sirius'],
                       ['/Educational_center_Sirius', '/back']]
     markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=False)
     update.message.reply_text(
