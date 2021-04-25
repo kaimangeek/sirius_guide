@@ -8,7 +8,7 @@ TOKEN = '1566338322:AAEXng78RsvoT8mhr4Voqd8-P65_qFv3YTw'
 def start(update, context):
     reply_keyboard = [['/sport_objects', '/amusements_objects'],
                       ['/education_objects']]
-    markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True)
+    markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=False)
     update.message.reply_text(
         "Приветствую, исследователь! Я бот-экскурсовод, который поможет тебе разобраться в федеральной территории "
         "«Сириус»"
@@ -36,7 +36,7 @@ def sport_objects(update, context):
     reply_keyboard = [['/Formula_1_track', '/Fisht_stadium', 'Speed_skating_center_Adler_Arena'],
                       ['/Ice_Palace_Bolshoi', '/Ice_arena_Puck', '/Curling_Center_Ice_Cube'],
                       ['/Ice_Palace_Iceberg', '/back']]
-    markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True)
+    markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=False)
     update.message.reply_text(
         "О каком объекте вы хотели бы узнать поподробнее?",
         reply_markup=markup
@@ -133,7 +133,7 @@ def Ice_Palace_Iceberg(update, context):
 def amusements_objects(update, context):
     reply_keyboard = [['/Olympic_embankment', '/Olympic_park'],
                       ['/Sochi_Park', '/back']]
-    markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True)
+    markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=False)
     update.message.reply_text(
         "О каком объекте вы хотели бы узнать поподробнее?",
         reply_markup=markup
@@ -182,7 +182,7 @@ def Sochi_Park(update, context):
 def education_objects(update, context):
     reply_keyboard = [['/Park_of_Science_and_Art_Sirius', 'Lyceum_Sirius'],
                       ['/Educational_center_Sirius', '/back']]
-    markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True)
+    markup = ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=False)
     update.message.reply_text(
         "О каком объекте вы хотели бы узнать поподробнее?",
         reply_markup=markup
