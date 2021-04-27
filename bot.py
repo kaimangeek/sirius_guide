@@ -2,7 +2,7 @@ from telegram.ext import Updater
 from telegram.ext import CommandHandler
 from telegram import ReplyKeyboardMarkup
 
-TOKEN = '1566338322:AAEXng78RsvoT8mhr4Voqd8-P65_qFv3YTw'
+TOKEN = '@siriusguide_bot'
 
 
 def start(update, context):
